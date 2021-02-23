@@ -18,3 +18,7 @@ npm start
 ```
 
 Isso inicia a aplicação react
+
+### Componentes são funções em Javascript, seus nomes iniciam com maiusculas
+
+### Componentes retornam elementos únicos
