@@ -3,10 +3,16 @@ import './Comentario.css'
 
 
 //JSX
-const Comentario = () => (
+const Comentario = (props) => {
+    return (
     <div className = "Comentario" >
-        <div>Sou o componente do comentário</div>
+        <h2>Comentario</h2>
+        <p>{props.nome}</p>
+        <p>{props.email}</p>
+        <p>{props.children}</p>
+        <p>{props.data.toString()}</p>
     </div>
-);
+    );
+};
 
 export default Comentario;
