@@ -24,3 +24,9 @@ Isso inicia a aplicação react
 ### Componentes retornam elementos únicos
 
 ### Componentes recebem propriedades da aplicação através de parametro props
+
+### State => é o estado da aplicação. podemos transferir dados entre os componentes
+
+---
+
+### App pode ser transformado em uma classe. Classes não tem retorno, tem funções e podem ser renderizadas
