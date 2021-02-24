@@ -7,14 +7,14 @@ import imagemUsuario from './user.png'
 const Comentario = (props) => {
     return (
     <div className = "Comentario" >
-        <h2 className = "nome">{props.nome}</h2>
         <img src={imagemUsuario} alt={props.nome} className="avatar"/>
-        <div>
+        <div className="conteudo">
+            <h2 className = "nome">{props.nome}</h2>
             <p className = "email">{props.email}</p>
             <p className = "mensagem">{props.children}</p>
             <p className = "data">{props.data.toString()}</p>
+            <button onClick={props.onRemove}>&times;</button>
         </div>
-        <button onClick={props.onRemove}>&times;</button>
     </div>
     );
 };
