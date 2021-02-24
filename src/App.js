@@ -19,6 +19,18 @@ class App extends Component {
   ]
   }
   
+  adicionarComentario = () => {
+    console.log('Adicionando comentario');
+    const novoComentario = {
+      nome: 'Antonio',
+      email: 'antonio@gmail.com',
+      data: new Date(),
+      mensagem: "Nova mensagem"
+    }
+    // utilização do spread
+    this.setState({comentarios: [...this.state.comentarios, novoComentario] })
+  }
+
   render(){
     return (
     <div className="App">
@@ -28,10 +40,11 @@ class App extends Component {
         key = {indice}
         nome = {comentario.nome}
         email = {comentario.email}
-        data = {comentario.data.toString()}
+        data = {comentario.data}
         >{comentario.mensagem}
         </Comentario>
       ))}
+      <button onClick={this.adicionarComentario}>Adicionar Comentario</button>
     </div>
     );
   }
